@@ -37,8 +37,8 @@ export function usePurchase() {
       // Mostrar confirmación de compra
       alert(`¡Compra exitosa! 
       
-Producto: ${purchaseData.productName}
-Precio: $${purchaseData.price.toFixed(2)}
+Producto: ${purchaseData.product_name}
+Precio: $${purchaseData.product_price.toFixed(2)}
 ID de transacción: ${result.transactionId || 'DEMO-' + Date.now()}
 
 En un entorno real, esto se enviaría al backend.`);

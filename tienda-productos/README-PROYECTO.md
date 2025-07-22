@@ -40,10 +40,9 @@ tienda-productos/
 ```typescript
 // Endpoint esperado: POST /api/purchase
 interface PurchaseRequest {
-  productId: number;
-  productName: string;
-  price: number;
-  quantity: number;
+  product_id: number;
+  product_name: string;
+  product_price: number;
   timestamp: string;
   userId: string;
 }
@@ -112,10 +111,9 @@ CREATE TABLE purchases (
 Cuando se hace click en "Comprar", se envía:
 ```json
 {
-  "productId": 1,
-  "productName": "Laptop Gaming Pro",
-  "price": 1299.99,
-  "quantity": 1,
+  "product_id": 1,
+  "product_name": "Laptop Gaming Pro",
+  "product_price": 1299.99,
   "timestamp": "2024-01-15T10:30:00.000Z",
   "userId": "user-123"
 }

@@ -7,8 +7,7 @@ export interface Product {
 }
 
 export interface PurchaseRequest {
-  productId: number;
-  productName: string;
-  price: number;
-  quantity?: number;
+  product_id: number;
+  product_name: string;
+  product_price: number;
 } 
