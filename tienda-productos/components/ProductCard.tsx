@@ -12,7 +12,6 @@ export default function ProductCard({ product }: ProductCardProps) {
 
   const handlePurchase = async () => {
     await purchaseProduct({
-      product_id: product.id,
       product_name: product.name,
       product_price: product.price
     });

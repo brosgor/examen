@@ -14,7 +14,7 @@ export function usePurchase() {
       await new Promise(resolve => setTimeout(resolve, 1000));
       
       // URL del backend (esto sería configurado según tu backend real)
-      const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:3001/api/purchase';
+      const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:3002/api/purchase';
       
       const response = await fetch(backendUrl, {
         method: 'POST',
